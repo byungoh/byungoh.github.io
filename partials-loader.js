@@ -1,10 +1,10 @@
 // Load title
-    fetch("/BYUNGOH-Finance/_partials/title.html")
+    fetch("/byungoh.github.io/_partials/title.html")
     .then(res => res.text())
     .then(html => document.getElementById("title-container").innerHTML = html);
 
 // Load menu
-fetch("/BYUNGOH-Finance/_partials/menu.html")
+fetch("/byungoh.github.io/_partials/menu.html")
   .then(res => res.text())
   .then(html => {
       document.getElementById("menu-container").innerHTML = html;
