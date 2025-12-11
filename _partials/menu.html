@@ -1,0 +1,44 @@
+<!-- Desktop Menu -->
+    <nav class="desktop-menu">
+    <ul class="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+         <li>
+            <a href="/menu/index.html">Menu</a>
+            <ul class="submenu">
+                <li><a href="/menu/submenu-1/index.html">Submenu 1</a></li>
+                <li><a href="/menu/submenu-2/index.html">Submenu 2</a></li>
+                <li><a href="/menu/submenu-3/index.html">Submenu 3</a></li>
+            </ul>
+        </li>
+
+        <!-- Private sections -->
+        <li><a href="/invest/index.html">Invest</a></li>
+
+    </ul>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-header">
+        <div class="site-title-mobile">A Musing Bird</div>
+        <div id="mobile-toggle" class="mobile-toggle">☰</div>
+    </div>
+
+    <nav id="mobile-menu" class="mobile-menu">
+     <ul class="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li class="has-submenu">
+            <a href="/menu/index.html" onclick="toggleSubmenu(event)">Books</a>
+            <ul class="submenu">
+                <li><a href="/menu/submenu-1/index.html">Submenu 1</a></li>
+                <li><a href="/menu/submenu-2/index.html">Submenu 2</a></li>
+                <li><a href="/menu/submenu-3/index.html">Submenu 3</a></li>
+            </ul>
+        </li>
+
+        <!-- Private sections -->
+        <li><a href="/invest/index.html">Invest</a></li>
+
+    </ul>
+    </nav>
