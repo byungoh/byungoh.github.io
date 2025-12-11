@@ -1,10 +1,10 @@
 // Load title
-    fetch("/byungoh.github.io/_partials/title.html")
+    fetch("/_partials/title.html")
     .then(res => res.text())
     .then(html => document.getElementById("title-container").innerHTML = html);
 
 // Load menu
-fetch("/byungoh.github.io/_partials/menu.html")
+fetch("/_partials/menu.html")
   .then(res => res.text())
   .then(html => {
       document.getElementById("menu-container").innerHTML = html;
@@ -32,6 +32,6 @@ fetch("/byungoh.github.io/_partials/menu.html")
 
 
 // Load footer
-fetch("/byungoh.github.io/_partials/footer.html")
+fetch("/_partials/footer.html")
     .then(res => res.text())
     .then(html => document.getElementById("footer-container").innerHTML = html);
