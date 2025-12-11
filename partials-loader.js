@@ -1,10 +1,10 @@
 // Load title
-    fetch("/_partials/title.html")
+    fetch("/BYUNGOH-Finance/_partials/title.html")
     .then(res => res.text())
     .then(html => document.getElementById("title-container").innerHTML = html);
 
 // Load menu
-fetch("/_partials/menu.html")
+fetch("/BYUNGOH-Finance/_partials/menu.html")
   .then(res => res.text())
   .then(html => {
       document.getElementById("menu-container").innerHTML = html;
@@ -32,6 +32,6 @@ fetch("/_partials/menu.html")
 
 
 // Load footer
-fetch("/_partials/footer.html")
+fetch("/BYUNGOH-Finance/_partials/footer.html")
     .then(res => res.text())
     .then(html => document.getElementById("footer-container").innerHTML = html);
