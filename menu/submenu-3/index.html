@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submenu 3 | OHSANG Finance 오상 파이낸스</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+ <!------------------------------ SITE ------------------------------>
+  <header>
+    <h1 class="site-title">
+    <span class="site-title-en">OHSANG Finance</span><br>
+    <span class="site-title-kr">오상 파이낸스</span>
+    </h1>
+  </header>
+<!------------------------------ DESK ------------------------------>
+  <nav><nav class="desktop-menu">
+  <ul class="menu">
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../../about.html">About</a></li>
+    <li>
+      <a href="../../menu/index.html">Menu</a>
+      <ul class="submenu">
+      <li><a href="../../menu/submenu-1/index.html">Submenu 1</a></li>
+      <li><a href="../../menu/submenu-2/index.html">Submenu 2</a></li>
+      <li><a href="../../menu/submenu-3/index.html">Submenu 3</a></li>
+      </ul>
+    </li>
+    <!-- Private sections -->
+    <li><a href="../../invest/index.html">Invest</a></li>
+  </ul>
+  </nav></nav>
+<!------------------------------ MOBI ------------------------------>
+  <div class="mobile-header">
+    <div class="site-title-mobile">OHSANG Finance 오상 파이낸스</div>
+    <div id="mobile-toggle" class="mobile-toggle">☰</div>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu">
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="has-submenu">
+      <a href="menu/index.html" onclick="toggleSubmenu(event)">Menu</a>
+      <ul class="submenu">
+      <li><a href="menu/submenu-1/index.html">Submenu 1</a></li>
+      <li><a href="menu/submenu-2/index.html">Submenu 2</a></li>
+      <li><a href="menu/submenu-3/index.html">Submenu 3</a></li>
+      </ul>
+    </li>
+    <!-- Private sections -->
+    <li><a href="invest/index.html">Invest</a></li>
+  </ul>
+  </nav>
+<!------------------------------ BREA ------------------------------>
+  <main class="content">
+    <nav class="breadcrumb">
+      <a href="../../index.html">Home</a><span>></span>
+      <a href="../../menu/index.html">Menu</a><span>&gt;</span>
+      <span class="current">Submenu 3</span>
+    </nav>
+<!------------------------------ CONT ------------------------------>
+    <h2>Submenu 3</h2>
+
+    <p>오상 파이낸스에 오신 것을 환영합니다.</p>
+    <p><span class="popup-word" onclick="openPopup('popup-여기')">여기</span>를 클릭하여 메시지를 확인하세요.</p>
+
+<!------------------------------ POPP ------------------------------>
+    <!-- Popup for "여기" -->
+    <div id="popup-여기" class="popup-box">
+    <p>오늘도 좋은 하루 되세요.🐥</p>
+    <div class="popup-close" onclick="closePopup('popup-여기')">Close</div>
+    </div>
+
+  </main>
+<!------------------------------ FOOT ------------------------------>
+  <footer class="footer"><p>© OHSANG Finance 오상 파이낸스 2025. All rights reserved.</p></footer>
+  <script src="../../script.js"></script>
+</body>
